@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{title}}</title>
+  <meta name="description" content="{{shortDescription}}" />
+  <!-- Schema.org markup for Google+ -->
+  <meta itemprop="name" content="{{title}}" />
+  <meta itemprop="description" content="{{shortDescription}}" />
+  <meta itemprop="image" content="{{image}}" />
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="{{authorTwitter}}">
+  <meta name="twitter:creator" content="{{authorTwitter}}">
+  <meta name="twitter:title" content="{{title}}">
+  <meta name="twitter:description" content="{{shortDescription}}">
+  <meta name="twitter:image" content="{{image}}">
+
+  <!-- Open Graph data -->
+  <meta property="og:title" content="{{title}}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="{{url}}" />
+  <meta property="og:image" content="{{image}}" />
+  <meta property="og:description" content="{{shortDescription}}" />
+  <meta property="og:site_name" content="Jules Gribble" />
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{googleAnalytics}}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', "{{googleAnalytics}}");
+  </script>
+</head>
+
+<body>
+  {{{body}}}
+  <script src="/js/build.js"></script>
+</body>
+
+</html>

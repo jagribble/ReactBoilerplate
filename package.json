@@ -1,0 +1,61 @@
+{
+  "name": "website",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run babel && node ./bin/www",
+    "build": "webpack --config webpack.config.prod.js && npm run babel",
+    "babel": "babel . --out-dir dist --ignore bin,node_modules,dist,components,public,webpack.config.dev.js,webpack.config.prod.js,webpack.config.common.js,.heroku"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.9.13",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/lab": "^4.0.0-alpha.52",
+    "@material-ui/styles": "^4.9.13",
+    "clsx": "^1.1.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "css-loader": "^2.1.1",
+    "date-diff": "^0.2.2",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "hbs": "^4.1.1",
+    "http-errors": "~1.6.3",
+    "is-mobile": "^2.2.1",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.0",
+    "node-sass": "^4.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-color": "^2.18.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/node": "^7.6.3",
+    "@babel/plugin-proposal-class-properties": "^7.7.0",
+    "@babel/plugin-transform-regenerator": "^7.8.7",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/polyfill": "^7.6.0",
+    "@babel/preset-env": "^7.9.6",
+    "@babel/preset-react": "^7.9.4",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "webpack-notifier": "^1.8.0"
+  }
+}
